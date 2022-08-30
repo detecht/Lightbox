@@ -50,14 +50,14 @@ open class LightboxController: UIViewController {
     return view
   }()
 
-  lazy var backgroundView: SDAnimatedImageView = {
+  // MARK: - Public views
+  
+  open lazy var backgroundView: SDAnimatedImageView = {
     let view = SDAnimatedImageView()
     view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 
     return view
   }()
-
-  // MARK: - Public views
 
   open fileprivate(set) lazy var headerView: HeaderView = { [unowned self] in
     let view = HeaderView()
